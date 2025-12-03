@@ -1,0 +1,38 @@
+/* Diet Table Styles */
+.diet-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    table-layout: fixed;
+    /* Helps with consistent column widths */
+}
+
+.diet-table th,
+.diet-table td {
+    border: 1px solid #e2e8f0;
+    padding: 1rem;
+    text-align: left;
+    vertical-align: top;
+    color: #334155;
+}
+
+.diet-table th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.diet-table td {
+    white-space: normal;
+    /* Allows text to wrap */
+    word-wrap: break-word;
+    /* Breaks long words if necessary */
+}
+
+/* Optional: Make the first column (Day) smaller */
+.diet-table th:first-child,
+.diet-table td:first-child {
+    width: 100px;
+    font-weight: 600;
+}
